@@ -15,22 +15,19 @@ body { margin: 0; padding: 0; }
 <div id="map"></div>
  
 <script>
-	// TO MAKE THE MAP APPEAR YOU MUST
-	// ADD YOUR ACCESS TOKEN FROM
-	// https://account.mapbox.com
-	mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN';
-const map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/mapbox/satellite-streets-v11',
-zoom: 1.5,
-center: [30, 50],
-projection: 'globe'
-});
+	mapboxgl.accessToken = 'pk.eyJ1IjoidGl0b2x1eW8iLCJhIjoiY2w1OW8xOXJ5MDBhbzNrcGtxc3Z6dW93OSJ9.p11VU0qUmYu7BicsHaQ8QA';
+    const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/satellite-streets-v11',
+        zoom: 1.5,
+        center: [30, 50],
+        projection: 'globe'
+    });
  
-map.on('load', () => {
-// Set the default atmosphere style
-map.setFog({});
-});
+    map.on('load', () => {
+        // Set the default atmosphere style
+        map.setFog({});
+    });
 </script>
  
 </body>
